@@ -1,31 +1,20 @@
-package com.example.allin.mytestapplication;
+# ChartDemo
+    可以绘制单/多数据图形：单线、多线、单柱、多柱 等
 
-import android.graphics.Color;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+## 添加依赖
+```
+implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 
-import com.example.allin.mytestapplication.manager.LineChartManager;
-import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.AxisBase;
-import com.github.mikephil.charting.components.Description;
-import com.github.mikephil.charting.components.Legend;
-import com.github.mikephil.charting.components.LimitLine;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.components.YAxis;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+```
+## 管理类
+- LineChartManager 线形图管理类
+- BarChartManager 柱形图管理类
+- PieChartManager 饼状图管理类
+- PieChartManager 网状图管理类
 
-import java.util.ArrayList;
-import java.util.List;
+## 使用
 
-/**
- * legend
- * 线形图
- *
- */
-public class LineActivity extends AppCompatActivity {
+```
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -183,4 +172,14 @@ public class LineActivity extends AppCompatActivity {
         names.add("唯医骨科");
         lineChartManager.showLineChart(xValues,yValues,names,colours);
     }
-}
+```
+
+特别鸣谢：[MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
+
+- ![avatar](img_line.png)
+![avatar](img_zhu.png)
+- ![avatar](img_shan.png)
+![avatar](img_wang.png)
+
+
+
