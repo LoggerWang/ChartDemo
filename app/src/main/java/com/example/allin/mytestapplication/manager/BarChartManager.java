@@ -2,7 +2,6 @@ package com.example.allin.mytestapplication.manager;
 
 import android.graphics.Color;
 
-import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
@@ -55,8 +54,8 @@ public class BarChartManager {
         //显示边界
         mBarChart.setDrawBorders(true);
         //设置动画效果
-        mBarChart.animateY(1000, Easing.EasingOption.Linear);
-        mBarChart.animateX(1000, Easing.EasingOption.Linear);
+//        mBarChart.animateY(1000, Easing.EasingOption.Linear);
+//        mBarChart.animateX(1000, Easing.EasingOption.Linear);
 
         //折线图例 标签 设置
         Legend legend = mBarChart.getLegend();

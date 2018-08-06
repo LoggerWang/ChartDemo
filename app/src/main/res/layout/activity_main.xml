@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <Button
+        android:id="@+id/bt_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goLineActivity"
+        android:text="折线图" />
 
     <Button
         android:id="@+id/bt_zhu"
@@ -13,12 +19,7 @@
         android:layout_height="wrap_content"
         android:onClick="goZhuActivity"
         android:text="柱状图" />
-    <Button
-        android:id="@+id/bt_line"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="goLineActivity"
-        android:text="折线图" />
+
     <Button
         android:id="@+id/bt_circle"
         android:layout_width="wrap_content"
