@@ -1,4 +1,4 @@
-package com.example.allin.mytestapplication.manager;
+package javacode.manager;
 
 import android.graphics.Color;
 

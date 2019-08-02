@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--假体统计-假体公司-->
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/barchartFakeCompany"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp275">
+
+    </com.github.mikephil.charting.charts.HorizontalBarChart>
+
+    <LinearLayout
+            android:id="@+id/llContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dp10"
+            android:paddingEnd="@dimen/dp10"
+    android:orientation="vertical">
+
+    </LinearLayout>
+
+</FrameLayout>

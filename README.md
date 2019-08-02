@@ -10,7 +10,7 @@ implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 - LineChartManager 线形图管理类
 - BarChartManager 柱形图管理类
 - PieChartManager 饼状图管理类
-- PieChartManager 网状图管理类
+- RadarChartManager 雷达图管理类
 
 ## 使用
 

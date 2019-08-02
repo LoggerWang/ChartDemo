@@ -1,10 +1,12 @@
-package com.example.allin.mytestapplication;
+package javacode.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.allin.mytestapplication.manager.LineChartManager;
+import javacode.manager.LineChartManager;
+
+import com.example.allin.R;
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Description;
@@ -57,9 +59,9 @@ public class LineActivity extends AppCompatActivity {
         //设置网格背景色
         mLineChartSingle.setGridBackgroundColor(Color.TRANSPARENT);
         //设置X轴是否可缩放,默认可缩放
-        mLineChartSingle.setScaleXEnabled(true);
+//        mLineChartSingle.setScaleXEnabled(true);
         //设置Y轴是否可缩放,默认可缩放
-        mLineChartSingle.setScaleYEnabled(true);
+//        mLineChartSingle.setScaleYEnabled(true);
         //设置图表右下角描述
         Description description = new Description();
         description.setText("description描述文字");
@@ -77,6 +79,7 @@ public class LineActivity extends AppCompatActivity {
         xAxis.setLabelCount(12,true);
         //设置X轴字体颜色
         xAxis.setTextColor(Color.WHITE);
+        xAxis.setDrawAxisLine(false);
         //设置X轴的值（最小值、最大值、然后会根据设置的刻度数量自动分配刻度显示）
 //        xAxis.setAxisMinimum(0f);
 //        xAxis.setAxisMaximum(20f);
@@ -104,6 +107,7 @@ public class LineActivity extends AppCompatActivity {
         YAxis axisLeft = mLineChartSingle.getAxisLeft();
         //设置左侧Y轴的颜色
         axisLeft.setTextColor(Color.WHITE);
+        axisLeft.setLabelCount(5,true);
 
         //限制线
         LimitLine limitLine = new LimitLine(500,"月度目标新增用户");
@@ -111,7 +115,7 @@ public class LineActivity extends AppCompatActivity {
         limitLine.setTextSize(10f);
         limitLine.setTextColor(Color.RED);  //颜色
         limitLine.setLineColor(Color.BLUE);
-        axisRight.addLimitLine(limitLine); //Y轴添加限制线
+//        axisRight.addLimitLine(limitLine); //Y轴添加限制线
 
 
         //设置数据

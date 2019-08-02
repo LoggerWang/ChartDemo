@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
     <Button
         android:id="@+id/bt_line"
         android:layout_width="wrap_content"
@@ -32,5 +31,17 @@
         android:layout_height="wrap_content"
         android:onClick="goSpider"
         android:text="网状图" />
+    <Button
+        android:id="@+id/bt_linechart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goDataStatistics"
+        android:text="图表统计" />
+    <Button
+        android:id="@+id/bt_mybarchart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goMyBarChart"
+        android:text="自定义横向柱状图" />
 
 </LinearLayout>

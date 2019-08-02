@@ -1,4 +1,4 @@
-package com.example.allin.mytestapplication.manager;
+package javacode.manager;
 
 import com.github.mikephil.charting.animation.Easing;
 import com.github.mikephil.charting.charts.LineChart;

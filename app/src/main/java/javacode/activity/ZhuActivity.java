@@ -1,10 +1,12 @@
-package com.example.allin.mytestapplication;
+package javacode.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.allin.mytestapplication.manager.BarChartManager;
+import javacode.manager.BarChartManager;
+
+import com.example.allin.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;

@@ -1,10 +1,12 @@
-package com.example.allin.mytestapplication;
+package javacode.activity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.allin.mytestapplication.manager.RadarChartManager;
+import javacode.manager.RadarChartManager;
+
+import com.example.allin.R;
 import com.github.mikephil.charting.charts.RadarChart;
 import com.github.mikephil.charting.components.Description;
 

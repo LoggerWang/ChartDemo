@@ -1,4 +1,4 @@
-package com.example.allin.mytestapplication.manager;
+package javacode.manager;
 
 import android.graphics.Color;
 
@@ -24,14 +24,13 @@ public class PieChartManager {
     }
 
     private void initChart() {
-        pieChart.setHoleRadius(60f);//半径    
+        pieChart.setHoleRadius(50f);//半径    
         pieChart.setTransparentCircleRadius(40f);// 半透明圈    
         pieChart.setDrawCenterText(true);//饼状图中间可以添加文字    
         pieChart.setDrawHoleEnabled(true);
-        pieChart.setRotationAngle(90);// 初始旋转角度    
+        pieChart.setRotationAngle(-90);// 初始旋转角度    
         pieChart.setRotationEnabled(false);// 可以手动旋转    
         pieChart.setUsePercentValues(true);//显示成百分比  
-
         Legend legend = pieChart.getLegend();
         legend.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
         legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
@@ -62,7 +61,7 @@ public class PieChartManager {
         set.setValueTextSize(12);
         set.setColors(colors);
         set.setValueTextColor(Color.WHITE);
-
+        set.setDrawValues(false);
         PieData data = new PieData(set);
         pieChart.setData(data);
         pieChart.invalidate(); // refresh
@@ -77,9 +76,9 @@ public class PieChartManager {
      */
     public void setSolidPieChart(List<String> name, List<Float> date, List<Integer> colors) {
 
-        pieChart.setHoleRadius(0);//实心圆   
+//        pieChart.setHoleRadius(0);//实心圆   
         pieChart.setTransparentCircleRadius(0);// 半透明圈  
-        pieChart.setDrawCenterText(false);//饼状图中间不可以添加文字  
+        pieChart.setDrawCenterText(true);//饼状图中间不可以添加文字  
 
         List<PieEntry> yValue = new ArrayList<>();
         for (int i = 0; i < date.size(); i++) {
@@ -91,6 +90,7 @@ public class PieChartManager {
         set.setValueTextSize(12);
         set.setColors(colors);
 
+        set.setYValuePosition(PieDataSet.ValuePosition.OUTSIDE_SLICE);
         set.setValueTextColor(Color.WHITE);
         PieData data = new PieData(set);
         pieChart.setData(data);
